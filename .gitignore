@@ -1,0 +1,86 @@
+# ======================
+# Arquivos de Compilação
+# ======================
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+*.a
+*.lib
+
+# ======================
+# Build / Binários
+# ======================
+/bin/
+/build/
+/debug/
+/release/
+/dist/
+/.venv
+*.log
+
+# ======================
+# Arquivos Temporários
+# ======================
+*.swp
+*.swo
+*.tmp
+*.temp
+*.cache
+*.pid
+*.seed
+*.bak
+*~
+
+# ======================
+# IDEs e Editores
+# ======================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+
+# Eclipse
+.project
+.cproject
+.settings/
+
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# ======================
+# Sistema Operacional
+# ======================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+.cache/
+.config/
+.local/
+
+# ======================
+# Outros
+# ======================
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar

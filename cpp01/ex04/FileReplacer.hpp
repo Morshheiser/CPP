@@ -11,13 +11,12 @@ class FileReplacer
         std::string filename;
         std::string s1;
         std::string s2;
-    
+
     public:
         FileReplacer(const std::string &filename, const std::string &s1, const std::string &s2);
         ~FileReplacer();
-    
-    void replaceInFile() const;
 
+    void replaceInFile() const;
 };
 
 #endif
