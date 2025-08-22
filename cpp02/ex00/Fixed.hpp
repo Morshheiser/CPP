@@ -5,20 +5,18 @@
 
 class Fixed
 {
-private:
-    int                 _raw;
-    static const int    _fractionalBits;
+    private:
+        int                 _raw;
+        static const int    _fractionalBits;
 
-public:
-    // Orthodox Canonical Form
-    Fixed();                    // default constructor
-    Fixed(const Fixed &other);  // copy constructor
-    Fixed &operator=(const Fixed &other); // copy assignment operator
-    ~Fixed();                   // destructor
+    public:
+        Fixed();
+        Fixed(const Fixed &other);
+        Fixed &operator=(const Fixed &other);
+        ~Fixed();
 
-    // Member functions
-    int getRawBits(void) const;
-    void setRawBits(int const raw);
+        int getRawBits(void) const;
+        void setRawBits(int const raw);
 };
 
 #endif

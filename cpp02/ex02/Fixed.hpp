@@ -4,7 +4,8 @@
 # include <iostream>
 # include <cmath>
 
-class Fixed {
+class Fixed
+{
   private:
     int _raw;
     static const int _fractionalBits = 8;

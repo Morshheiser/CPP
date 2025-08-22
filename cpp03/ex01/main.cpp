@@ -1,6 +1,7 @@
 #include "ScavTrap.hpp"
 
-int main() {
+int main()
+{
     ClapTrap alpha("Alpha");
     ScavTrap bravo("Bravo");
 

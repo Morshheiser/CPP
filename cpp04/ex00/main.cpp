@@ -11,9 +11,9 @@ int main()
     std::cout << j->getType() << std::endl;
     std::cout << i->getType() << std::endl;
 
-    i->makeSound(); // Meow
-    j->makeSound(); // Woof
-    meta->makeSound(); // generic
+    i->makeSound();
+    j->makeSound();
+    meta->makeSound();
 
     delete meta;
     delete j;

@@ -1,19 +1,23 @@
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap() : _name("Default"), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
+ClapTrap::ClapTrap() : _name("Default"), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+{
     std::cout << "ClapTrap " << _name << " constructed" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0) {
+ClapTrap::ClapTrap(const std::string& name) : _name(name), _hitPoints(10), _energyPoints(10), _attackDamage(0)
+{
     std::cout << "ClapTrap " << _name << " constructed" << std::endl;
 }
 
-ClapTrap::ClapTrap(const ClapTrap& other) {
+ClapTrap::ClapTrap(const ClapTrap& other)
+{
     *this = other;
     std::cout << "ClapTrap copy constructed" << std::endl;
 }
 
-ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
+ClapTrap& ClapTrap::operator=(const ClapTrap& other)
+{
     if (this != &other) {
         _name = other._name;
         _hitPoints = other._hitPoints;
@@ -23,11 +27,13 @@ ClapTrap& ClapTrap::operator=(const ClapTrap& other) {
     return *this;
 }
 
-ClapTrap::~ClapTrap() {
+ClapTrap::~ClapTrap()
+{
     std::cout << "ClapTrap " << _name << " destructed" << std::endl;
 }
 
-void ClapTrap::attack(const std::string& target) {
+void ClapTrap::attack(const std::string& target)
+{
     if (_hitPoints > 0 && _energyPoints > 0) {
         _energyPoints--;
         std::cout << "ClapTrap " << _name << " attacks " << target
@@ -35,13 +41,15 @@ void ClapTrap::attack(const std::string& target) {
     }
 }
 
-void ClapTrap::takeDamage(unsigned int amount) {
+void ClapTrap::takeDamage(unsigned int amount)
+{
     _hitPoints -= amount;
     if (_hitPoints < 0) _hitPoints = 0;
     std::cout << "ClapTrap " << _name << " takes " << amount << " damage!" << std::endl;
 }
 
-void ClapTrap::beRepaired(unsigned int amount) {
+void ClapTrap::beRepaired(unsigned int amount)
+{
     if (_hitPoints > 0 && _energyPoints > 0) {
         _energyPoints--;
         _hitPoints += amount;
@@ -49,10 +57,12 @@ void ClapTrap::beRepaired(unsigned int amount) {
     }
 }
 
-int ClapTrap::getAttackDamage() const {
+int ClapTrap::getAttackDamage() const
+{
     return _attackDamage;
 }
 
-std::string ClapTrap::getName() const {
+std::string ClapTrap::getName() const
+{
     return _name;
 }

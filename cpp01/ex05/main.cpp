@@ -1,10 +1,7 @@
 #include "Harl.hpp"
-#include <iostream>
 
-// Programa de teste simples:
-// - Se passar 1 argumento, chama só aquele nível.
-// - Se não passar, demonstra todos os níveis.
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     Harl harl;
 
     if (argc == 2) {
